@@ -1,35 +1,24 @@
 import React from 'react';
 import Home from './components/Home';
+import About from './components/About';
 import styled from 'styled-components';
 /** @jsxImportSource @emotion/react */ 
 import { css } from '@emotion/react'
-const Wrapper= styled.div`
-    div{
-        height: 100vh;
-        width: 100vw;
-    }
-`;
+import Project from './components/Project';
+import { Container } from 'react-bootstrap';
 
-const wrapper=css`
-div{
-    height: 100vh;
-    width: 100vw;
-}
-`;
 
 export default function Intro(){
     return (
-        <div css={wrapper}>
+        <div>
             <div id="home">
                 <Home/>
             </div>
             <div id="about" >
-                <h2>About</h2>
-                <p>content</p>
+                <About/>
             </div>
             <div id="project" >
-                <h2>Project</h2>
-                <p>content</p>
+                <Project/>
             </div>
             <div id="connect">
                 <h2>Connect</h2>
