@@ -6,6 +6,25 @@ import emoji2 from '../image/emoji2.png';
 import emoji3 from '../image/emoji3.png';
 import emoji4 from '../image/emoji4.png';
 
+const Home=()=>{
+    return (
+            <div css={content}>
+                    <p>나, <strong>이소진</strong>은</p>
+                    <p css ={rotateContianer}>
+                        <span>
+                            매일 성장하고 싶은 <img src={ emoji1 } width='75' height='75' alt='Icon1' /><br/>
+                            욕심이 가득한 <img src={ emoji3 } width='80' height='80' alt='Icon3' /><br/>
+                            책임감이 있는 <img src={ emoji2 } width='75' height='75' alt='Icon4' /><br/>
+                            소통을 중요시하는 <img src={ emoji4 } width='90' height='90' alt='Icon4' /><br/>
+                        </span>
+                    </p>
+                    <p>프론트엔드 <strong>개발자</strong>이다.</p>
+                    
+            </div>   
+    );
+}
+export default Home;
+
 const content = css`
 
 height: 100vh;
@@ -78,22 +97,3 @@ const rotateContianer= css`
     }
 
 `;
-
-const Home=()=>{
-    return (
-            <div css={content}>
-                    <p>나, <strong>이소진</strong>은</p>
-                    <p css ={rotateContianer}>
-                        <span>
-                            매일 성장하고 싶은 <img src={ emoji1 } width='75' height='75' alt='Icon1' /><br/>
-                            욕심이 가득한 <img src={ emoji3 } width='80' height='80' alt='Icon3' /><br/>
-                            책임감이 있는 <img src={ emoji2 } width='75' height='75' alt='Icon4' /><br/>
-                            소통을 중요시하는 <img src={ emoji4 } width='90' height='90' alt='Icon4' /><br/>
-                        </span>
-                    </p>
-                    <p>프론트엔드 <strong>개발자</strong>이다.</p>
-                    
-            </div>   
-    );
-}
-export default Home;

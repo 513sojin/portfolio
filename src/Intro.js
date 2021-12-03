@@ -21,8 +21,6 @@ export default function Intro(){
                 <Project/>
             </div>
             <div id="connect">
-                <h2>Connect</h2>
-                <p>content</p>
             </div>
         </div>
         
