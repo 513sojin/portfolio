@@ -1,13 +1,8 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */ 
 import { css } from '@emotion/react'
-import { backgroundColor, content, contentDiv, contentWrapper, pTag } from './About';
-import { Link } from 'react-router-dom';
-import {
-    Card, Tooltip, OverlayTrigger
-} from 'react-bootstrap';
+import { backgroundColor, content, contentDiv, contentWrapper} from './About';
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 import flumeride from '../image/screenshot_flume.png'
 import sojinpage from '../image/screenshot_sojin.png'
 
@@ -48,16 +43,14 @@ const Project=()=>{
 }
 
 export default Project;
-const titleStyle=css`
+export const titleStyle=css`
     margin: 0;
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
 `;
 
-
-
-const imgContianer=css`
+export const imgContianer=css`
 float: left;
 text-align:center;
 

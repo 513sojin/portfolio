@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { css } from '@emotion/react'
 import Project from './components/Project';
 import { Container } from 'react-bootstrap';
+import Connect from './components/Connect';
 
 
 export default function Intro(){
@@ -21,6 +22,7 @@ export default function Intro(){
                 <Project/>
             </div>
             <div id="connect">
+                <Connect/>
             </div>
         </div>
         
