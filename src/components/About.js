@@ -1,15 +1,13 @@
-import React, {useState, useRef} from 'react';
+import React  from 'react';
 /** @jsxImportSource @emotion/react */ 
 import { css } from '@emotion/react'
 import univ from '../image/univ.png'
 import language from '../image/language.png'
 import favor from '../image/favor.png'
-import styled from '@emotion/styled'
 import {
-    Col, Row, Tooltip, OverlayTrigger
+    Tooltip, OverlayTrigger
 } from 'react-bootstrap';
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 
 const About = () => {
 
@@ -17,7 +15,7 @@ const About = () => {
       <div css={content}>
         <Fade bottom>
         <div style={{marginTop: '-10%', marginBottom: '3%'}}>
-            <p css={pTag}>이소진, 넌 누구니 ?</p>
+            <p css={titleStyle}>About</p>
             <p style={{fontWeight : 600, textAlign: 'center'}}>제가 누군지 궁금하지 않으신가요 ? 글자 위에 마우스를 올려주세요. </p>
         </div>
         </Fade>
@@ -54,14 +52,14 @@ const About = () => {
 
 export default About;
 
-const pTag= css`
+export const titleStyle= css`
     margin: 0;
     font-size: 3.5rem;
     font-weight: 900;
     text-align: center;
 `;
 
-const content = css`
+export const content = css`
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -69,7 +67,7 @@ const content = css`
     justify-content: center;
 `;
   
-  const contentWrapper = css`
+export const contentWrapper = css`
   width: 100%;
   height: 40%;
   display: flex;
@@ -78,7 +76,7 @@ const content = css`
   
   `;
 
-  const contentDiv =css`
+export  const contentDiv =css`
     width:85%;
     height: 100%;
     margin: 0 auto;
@@ -87,7 +85,7 @@ const content = css`
     z-index:3;
   `;
 
-  const backgroundColor=css`
+export const backgroundColor=css`
   width: 100%;
   height: 20%;
   background:gray;
@@ -109,49 +107,3 @@ const content = css`
       border: 1px solid linear-gradient(40deg, #6495ED, #BA55D3);
     }
   `;
-
-  // background: -webkit-linear-gradient(40deg, #6495ED, #BA55D3);
-  //     color: transparent;
-  //     -webkit-background-clip: text;
-// <div css={divWrapper}>
-
-//               <div css={divContainer}>
-//               <OverlayTrigger
-//                 placement="bottom"
-//                 delay={{ show: 500, hide: 300 }}
-//                 overlay={renderTooltip}
-//               >
-//                 <div css={firstDiv} style={{width:'220px' , height:'220px'}}>
-//                   <img src={univ} alt='univ' css={imgStyle}/>
-//                   <div style={{position: 'relative', paddingBottom:'10px', fontSize: '2rem', color:'white', fontWeight: '800'}}>Univ</div>
-//                 </div>
-//                 </OverlayTrigger>
-//               </div>
-              
-//               <div css={divContainer}>
-//                 <OverlayTrigger
-//                 placement="bottom"
-//                 delay={{ show: 500, hide: 300 }}
-//                 overlay={renderTooltip}
-//               >
-//                 <div css={secondDiv} style={{width:'220px' , height:'220px'}}>
-//                   <img src={language} alt='language' css={imgStyle}/>
-//                   <div style={{position: 'relative', paddingBottom:'10px', fontSize: '2rem', color:'white', fontWeight: '800'}}>Language</div>
-//                 </div>
-//                 </OverlayTrigger>
-//               </div >
-              
-//               <div css={divContainer}>
-//               <OverlayTrigger
-//                 placement="bottom"
-//                 delay={{ show: 500, hide: 300 }}
-//                 overlay={renderTooltip}
-//               >
-//                 <div css={secondDiv} style={{width:'220px' , height:'220px'}}>
-//                   <img src={favor} alt='favor' css={imgStyle}/>
-//                   <div style={{position: 'relative', paddingBottom:'10px', fontSize: '2rem', color:'white', fontWeight: '800'}}>Favor</div>
-//                 </div>
-//                 </OverlayTrigger>
-
-
-//             </div>
