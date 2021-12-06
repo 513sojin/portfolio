@@ -23,13 +23,13 @@ const Connect=()=>{
                     <div css={contentDiv}>
                         <div css={imgContianer}>
                             <a href={'https://github.com/513sojin'}>
-                                <img src={github} width='200' height='200' alt='flume'/>
+                                <img src={github} css={image} alt='flume'/>
                             </a>
                             <p>Github</p>
                         </div>
                         <div css={imgContianer}>
                             <a href={'https://velog.io/@513sojin'}>
-                                <img src={velog}/>
+                                <img src={velog} css={image}/>
                             </a>
                             <p>Velog</p>
                         </div>
@@ -59,6 +59,15 @@ const connectWrapper = css`
   flex-direction: column;
   position: relative;
   `;
+
+const image=css`
+width:200px;
+height:200px;
+@media (max-width: 768px) {
+    width:100px;
+    height:100px;
+  }
+`;
 
 export default Connect;
 
