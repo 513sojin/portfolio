@@ -24,21 +24,21 @@ const About = () => {
           <div css={backgroundColor}></div>
           <div css={contentDiv}>
             <div css={float}>
-              <img src={univ} width='200' height='200' alt='univ'/>
+              <img src={univ} css={imageStyle} alt='univ'/>
               <OverlayTrigger  placement="bottom"  delay={{ show: 500, hide: 300 }}  overlay={<Tooltip id="button-tooltip">숭실대학교 글로벌미디어학부 2학년 2학기까지 마친 상태입니다. 지금은 휴학생입니다 :)</Tooltip>}>
                 <p>Univ</p>
               </OverlayTrigger>
             </div>
 
             <div css={float}>
-              <img src={language} width='200' height='200' alt='language'/>
+              <img src={language} css={imageStyle} alt='language'/>
               <OverlayTrigger  placement="bottom"  delay={{ show: 500, hide: 300 }}  overlay={<Tooltip id="button-tooltip">React와 Flutter에 관심 있습니다. Flutter로 프로젝트를 진행했기에 가장 잘 사용하는 언어이지만, React도 그 수준에 도달하기 위해서 노력하고 있어요 !</Tooltip>}>
                 <p>Language</p>
               </OverlayTrigger>
             </div>
 
             <div css={float} >
-              <img src={favor} width='200' height='200' alt='favor'/>
+              <img src={favor} css={imageStyle} alt='favor'/>
               <OverlayTrigger  placement="bottom"  delay={{ show: 500, hide: 300 }}  overlay={<Tooltip id="button-tooltip">새로운 환경을 좋아하고, 다양한 사람들과 대화하는 것을 좋아해요. 실력있는 개발자들과 협업하면서 성장하는 것이 저의 목표입니다 !</Tooltip>}>
                 <p>Favor</p>
               </OverlayTrigger>
@@ -57,7 +57,14 @@ export const titleStyle= css`
     font-size: 4rem;
     font-weight: 900;
     text-align: center;
-    
+
+    @media (min-width: 768px) and (max-width: 991px) {
+      font-size:3rem;
+    }
+      
+    @media (max-width: 768px) {
+      font-size:3rem;
+    }
 `;
 
 export const content = css`
@@ -105,6 +112,31 @@ export const backgroundColor=css`
       text-align: center;
       font-size: 2rem;
       font-weight: 400;
-      border: 1px solid linear-gradient(40deg, #6495ED, #BA55D3);
+    }
+
+    @media (max-width: 768px) {
+      p{
+        margin-top:10px;
+        font-size:1.5rem;
+        color:white;
+        font-weight:500;
+      }
     }
   `;
+
+  const imageStyle=css`
+  width:200px;
+  height:200px;
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    width:150px;
+    height:150px;
+  }
+    
+  @media (max-width: 768px) {
+    width:100px;
+    height:100px;
+  }
+  `;
+
+  
