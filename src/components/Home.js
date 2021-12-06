@@ -12,10 +12,10 @@ const Home=()=>{
                     <p>나, <strong>이소진</strong>은</p>
                     <p css ={rotateContianer}>
                         <span>
-                            매일 성장하고 싶은 <img src={ emoji1 } width='75' height='75' alt='Icon1' /><br/>
-                            욕심이 가득한 <img src={ emoji3 } width='80' height='80' alt='Icon3' /><br/>
-                            책임감이 있는 <img src={ emoji2 } width='75' height='75' alt='Icon4' /><br/>
-                            소통을 중요시하는 <img src={ emoji4 } width='90' height='90' alt='Icon4' /><br/>
+                            매일 성장하고 싶은 <img src={ emoji1 } css={firstAndThirdImage} alt='Icon1' /><br/>
+                            욕심이 가득한 <img src={ emoji3 } css={secondImage} alt='Icon3' /><br/>
+                            책임감이 있는 <img src={ emoji2 } css={firstAndThirdImage} alt='Icon4' /><br/>
+                            소통을 중요시하는 <img src={ emoji4 } css={fourthImage} alt='Icon4' /><br/>
                         </span>
                     </p>
                     <p>프론트엔드 <strong>개발자</strong>이다.</p>
@@ -28,35 +28,44 @@ export default Home;
 const content = css`
 height: 100vh;
 width: 100vw;
-    @media (max-width: 768px) {
-        padding: 25px;
-        padding-left: 50px;
-        p{
-            font-size: 3rem;
-        }
-    }
 
-    padding-left: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+padding-left: 150px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
 
-    p {
-        font-size: 5rem;
-        font-weight: 800;
-        line-height: 7rem;
-    }
+p {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 7rem;
+}
 
-    strong { 
-        background: #6495ED;
-        background: -webkit-linear-gradient(20deg, #6495ED, #BA55D3);
-        background:    -moz-linear-gradient(20deg, #6495ED, #BA55D3);
-        -webkit-background-clip: text;
-                background-clip: text;
-        color: transparent;
+strong { 
+    background: #6495ED;
+    background: -webkit-linear-gradient(20deg, #6495ED, #BA55D3);
+    background:    -moz-linear-gradient(20deg, #6495ED, #BA55D3);
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    padding-left: 50px;
+    p{
+        font-size: 4rem;
+        line-height: 6rem;
     }
+}
     
+@media (max-width: 768px) {
+    padding-left: 25px;
+    p{
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+}
+
 `;
 
 const rotateContianer= css`
@@ -96,4 +105,37 @@ const rotateContianer= css`
           }
     }
 
+    @media (min-width: 768px) and (max-width: 991px) {
+        height: 6rem;
+    }
+        
+    @media (max-width: 768px) {
+        height: 5rem;
+    }
+
+`;
+
+const firstAndThirdImage=css`
+width:80px;
+height:80px;
+@media (max-width: 768px) {
+    width:65px;
+    height:65px;
+}
+`;
+const secondImage =css`
+width:85px;
+height:85px;
+@media (max-width: 768px) {
+    width:70px;
+    height:70px;
+}
+`;
+const fourthImage=css`
+width:95px;
+height:95px;
+@media (max-width: 768px) {
+    width:80px;
+    height:80px;
+}
 `;
