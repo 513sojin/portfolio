@@ -93,7 +93,7 @@ export  const contentDiv =css`
     z-index:3;
   `;
 
-export const backgroundColor=css`
+const backgroundColor=css`
   width: 100%;
   height: 20%;
   background:gray;

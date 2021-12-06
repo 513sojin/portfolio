@@ -36,8 +36,8 @@ justify-content: center;
 align-items: flex-start;
 
 p {
-    font-size: 5rem;
     font-weight: 800;
+    font-size: 5rem;
     line-height: 7rem;
 }
 
