@@ -22,11 +22,15 @@ const Connect=()=>{
                 <div css={connectWrapper}>
                     <div css={contentDiv}>
                         <div css={imgContianer}>
-                            <img src={github} width='200' height='200'/>
+                            <a href={'https://github.com/513sojin'}>
+                                <img src={github} width='200' height='200' alt='flume'/>
+                            </a>
                             <p>Github</p>
                         </div>
                         <div css={imgContianer}>
-                            <img src={velog}/>
+                            <a href={'https://velog.io/@513sojin'}>
+                                <img src={velog}/>
+                            </a>
                             <p>Velog</p>
                         </div>
                     </div>

@@ -8,10 +8,9 @@ import Project from './components/Project';
 import { Container } from 'react-bootstrap';
 import Connect from './components/Connect';
 
-
 export default function Intro(){
     return (
-        <div>
+        <div style={{fontFamily: 'AppleRegular'}}>
             <div id="home">
                 <Home/>
             </div>

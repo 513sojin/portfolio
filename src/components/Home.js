@@ -26,7 +26,6 @@ const Home=()=>{
 export default Home;
 
 const content = css`
-
 height: 100vh;
 width: 100vw;
     @media (max-width: 768px) {
@@ -57,6 +56,7 @@ width: 100vw;
                 background-clip: text;
         color: transparent;
     }
+    
 `;
 
 const rotateContianer= css`

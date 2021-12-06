@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family: 'NanumGothicRegular';
+  font-style: normal;
+  font-weight: 300;
+  src: url("./font/NanumGothic-Regular.ttf"),
+}
+
+@font-face {
+  font-family: 'NanumMyeongjo';
+  font-style: normal;
+  font-weight: 300;
+  src: url("./font/NanumMyeongjo-Regular.ttf"),
+}
+
+@font-face {
+  font-family: 'AppleRegular';
+  font-style: normal;
+  font-weight: 400;
+  src: url("./font/AppleSDGothicNeoM.ttf"),
+}
+
+@font-face {
+  font-family: 'AppleBold';
+  font-weight: 800;
+  src: url("./font/AppleSDGothicNeoB.ttf"),
+}

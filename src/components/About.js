@@ -54,9 +54,10 @@ export default About;
 
 export const titleStyle= css`
     margin: 0;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 900;
     text-align: center;
+    
 `;
 
 export const content = css`

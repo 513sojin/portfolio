@@ -1,7 +1,7 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */ 
 import { css } from '@emotion/react'
-import { backgroundColor, content, contentDiv, contentWrapper} from './About';
+import { backgroundColor, content, contentDiv, contentWrapper, titleStyle} from './About';
 import Fade from "react-reveal/Fade";
 import flumeride from '../image/screenshot_flume.png'
 import sojinpage from '../image/screenshot_sojin.png'
@@ -43,12 +43,6 @@ const Project=()=>{
 }
 
 export default Project;
-export const titleStyle=css`
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 900;
-    text-align: center;
-`;
 
 export const imgContianer=css`
 float: left;

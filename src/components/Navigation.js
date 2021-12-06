@@ -11,27 +11,27 @@ import { Link } from "react-scroll"
 function Navigation(){
     return (
         <>
-        <Navbar fixed="top" color="white" light>
+        <Navbar fixed="top" color="white" variant="light">
             <Container>
             <Navbar.Brand href="home"></Navbar.Brand>
             <Nav >
                 <Nav.Link>
-                    <Link to="home" spy={true}>
+                    <Link to="home">
                         Home
                     </Link>
                 </Nav.Link>
                 <Nav.Link>
-                    <Link to="about" spy={true}>
+                    <Link to="about">
                         About
                     </Link>
                 </Nav.Link>
                 <Nav.Link>
-                    <Link to="project" spy={true}>
+                    <Link to="project">
                         Project
                     </Link>
                 </Nav.Link>
                 <Nav.Link>
-                    <Link to="connect" spy={true}>
+                    <Link to="connect">
                         Connect
                     </Link>
                 </Nav.Link>
