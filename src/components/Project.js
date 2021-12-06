@@ -78,11 +78,11 @@ top:35%;
 `;
 
 const contentStyle=css`
-width:85%;
+width:80%;
 height: 100%;
 margin: 0 auto;
 display:flex;
-justify-content: space-between;
+justify-content: space-evenly;
 z-index:3;
     
   @media (max-width: 768px) {
