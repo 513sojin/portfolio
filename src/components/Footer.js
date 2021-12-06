@@ -7,7 +7,6 @@ const Footer =()=>{
         <div css={footer}>
             <p style={{ fontSize: "14px", color: 'white'}}>
                 Copyright 이소진. all rights reserved.
-                Built with {` `}<a href="https://www.gatsbyjs.org" style={{textDecoration:'none'}}>Gatsby</a>
                 <br />
                 <strong>513sojin@gmail.com</strong>
             </p>

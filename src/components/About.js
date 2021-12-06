@@ -15,7 +15,7 @@ const About = () => {
       <div css={content}>
         <Fade bottom>
         <div style={{marginTop: '-10%', marginBottom: '3%'}}>
-            <p css={titleStyle}>About</p>
+            <p css={titleStyle} >About</p>
             <p style={{fontWeight : 600, textAlign: 'center'}}>제가 누군지 궁금하지 않으신가요 ? 글자 위에 마우스를 올려주세요. </p>
         </div>
         </Fade>
@@ -55,7 +55,7 @@ export default About;
 export const titleStyle= css`
     margin: 0;
     font-size: 4rem;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
 
     @media (min-width: 768px) and (max-width: 991px) {
