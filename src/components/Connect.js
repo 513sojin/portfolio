@@ -1,7 +1,7 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */ 
 import { css } from '@emotion/react'
-import { content, contentDiv, contentWrapper, titleStyle } from './About';
+import { content, contentDiv, contentWrapper, subtitleStyle, titleStyle } from './About';
 import Fade from "react-reveal/Fade";
 import github from '../image/github.png';
 import velog from '../image/velog.png';
@@ -16,7 +16,7 @@ const Connect=()=>{
                 <Fade bottom>
                 <div style={{ marginBottom: '3%'}}>
                     <p css={titleStyle}>Connect</p>
-                    <p style={{fontWeight : 600, textAlign: 'center'}}>저의 더 많은 정보가 담긴 곳이 궁금하신가요 ?</p>
+                    <p css={subtitleStyle}>저의 더 많은 정보가 담긴 곳이 궁금하신가요 ?</p>
                 </div>
                 </Fade>
                 <div css={connectWrapper}>
@@ -64,8 +64,8 @@ const image=css`
 width:200px;
 height:200px;
 @media (max-width: 768px) {
-    width:100px;
-    height:100px;
+    width:130px;
+    height:130px;
   }
 `;
 

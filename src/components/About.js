@@ -16,7 +16,7 @@ const About = () => {
         <Fade bottom>
         <div style={{marginTop: '-10%', marginBottom: '3%'}}>
             <p css={titleStyle} >About</p>
-            <p style={{fontWeight : 600, textAlign: 'center'}}>제가 누군지 궁금하지 않으신가요 ? 글자 위에 마우스를 올려주세요. </p>
+            <p css={subtitleStyle}>글자 위에 마우스를 올리시면 저에 대한 설명을 볼 수 있어요. </p>
         </div>
         </Fade>
         
@@ -53,9 +53,10 @@ const About = () => {
 export default About;
 
 export const titleStyle= css`
+    
     margin: 0;
     font-size: 4rem;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
 
     @media (min-width: 768px) and (max-width: 991px) {
@@ -65,6 +66,14 @@ export const titleStyle= css`
     @media (max-width: 768px) {
       font-size:3rem;
     }
+`;
+export const subtitleStyle=css`
+font-weight : 600; 
+text-align: center;
+@media (max-width: 768px) {
+  font-size: 14px;
+
+}
 `;
 
 export const content = css`
@@ -117,7 +126,7 @@ const backgroundColor=css`
     @media (max-width: 768px) {
       p{
         margin-top:10px;
-        font-size:1.5rem;
+        font-size:24px;
         color:white;
         font-weight:500;
       }

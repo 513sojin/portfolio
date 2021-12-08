@@ -19,7 +19,6 @@ const Home=()=>{
                         </span>
                     </p>
                     <p>프론트엔드 <strong>개발자</strong>이다.</p>
-                    
             </div>   
     );
 }
@@ -39,6 +38,7 @@ p {
     font-weight: 800;
     font-size: 5rem;
     line-height: 7rem;
+    font-family: AppleBold;
 }
 
 strong { 
@@ -48,21 +48,26 @@ strong {
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
+    font-family: AppleBold;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     padding-left: 50px;
     p{
+        font-weight: 800;
         font-size: 4rem;
         line-height: 6rem;
+        font-family: AppleBold;
     }
 }
     
 @media (max-width: 768px) {
     padding-left: 25px;
     p{
+        font-weight: 800;
         font-size: 3rem;
         line-height: 5rem;
+        font-family: AppleBold;
     }
 }
 

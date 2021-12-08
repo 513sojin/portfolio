@@ -46,6 +46,12 @@
 }
 
 @font-face {
+  font-family: 'NanumGothicBold';
+  font-weight: 800;
+  src: url("./font/NanumGothic-Bold.ttf");
+}
+
+@font-face {
   font-family: 'NanumMyeongjo';
   font-style: normal;
   font-weight: 300;
@@ -64,3 +70,5 @@
   font-weight: 800;
   src: url("./font/AppleSDGothicNeoB.ttf"),
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');

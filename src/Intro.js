@@ -10,7 +10,7 @@ import Connect from './components/Connect';
 
 export default function Intro(){
     return (
-        <div style={{fontFamily: 'AppleRegular'}}>
+        <div>
             <div id="home">
                 <Home/>
             </div>

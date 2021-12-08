@@ -1,7 +1,7 @@
 import React from 'react';
 /** @jsxImportSource @emotion/react */ 
 import { css } from '@emotion/react'
-import { content, contentWrapper, titleStyle} from './About';
+import { content, contentWrapper, subtitleStyle, titleStyle} from './About';
 import Fade from "react-reveal/Fade";
 import flumeride from '../image/screenshot_flume.png'
 import sojinpage from '../image/screenshot_sojin.png'
@@ -16,7 +16,7 @@ const Project=()=>{
             <Fade bottom>
                 <div style={{marginTop: '-10%', marginBottom: '3%'}}>
                     <p css={titleStyle}>Project</p>
-                    <p style={{fontWeight : 600, textAlign: 'center'}}>사진을 클릭하시면 설명이 담긴 노션으로 이동합니다. </p>
+                    <p css={subtitleStyle}>사진을 클릭하시면 설명이 담긴 노션으로 이동합니다. </p>
                 </div>
             </Fade>
             
@@ -57,10 +57,15 @@ p{
     font-weight: 900;
 }
 &:hover {
-    transform:scale(1.1);
-    transition:.5s;
-  }
-
+transform:scale(1.1);
+transition:.5s;
+}
+@media (max-width: 768px) {
+    p{
+        font-size:2rem;
+        font-weight: 700;
+    }
+}
 `;
 
 const backgroundColor=css`
